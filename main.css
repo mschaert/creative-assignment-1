@@ -1,0 +1,29 @@
+.card {
+  width: 8rem;
+  height: 11rem;
+  text-align: center;
+}
+
+.cardValue {
+  font-size: 3em;
+}
+
+.suit {
+  font-size: 3.5em;
+}
+
+.card-body {
+  margin: 0 auto;
+}
+
+.jumbotron {
+  padding: 2rem;
+}
+
+#gameStatus {
+  padding: 1rem;
+}
+
+#easterEgg {
+  
+}
