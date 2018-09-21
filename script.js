@@ -96,14 +96,16 @@ $("#playWar").click(function() {
 		currentPile.push(p2_card);
 
 		// Add additional cards
-		if (p1_deck.length > 1) {
-			p1_card = p1_deck.shift();
-			currentPile.push(p1_card);
-		}
+		for (var i = 0; i < 3; i++) {
+			if (p1_deck.length > 1) {
+				p1_card = p1_deck.shift();
+				currentPile.push(p1_card);
+			}
 
-		if (p2_deck.length > 1) {
-			p2_card = p2_deck.shift();
-			currentPile.push(p2_card);
+			if (p2_deck.length > 1) {
+				p2_card = p2_deck.shift();
+				currentPile.push(p2_card);
+			}
 		}
 
 		$("#playWar").text("WAR! (" + currentPile.length + ")");
